@@ -8,10 +8,27 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 
 #команда бота
 @bot.command() 
-async def АКС(ctx):
+async def АКСИ(ctx):
+
+    await ctx.send ("[Макси] сосет хуй")
+    
+#команда бота
+@bot.command() 
+async def аксь(ctx):
 
     await ctx.send ("[Макси] сосет хуй")
 
+#команда бота
+@bot.command() 
+async def аксись(ctx):
+
+    await ctx.send ("[Макси] сосет хуй")
+
+#команда бота
+@bot.command() 
+async def акси(ctx):
+
+    await ctx.send ("[Макси] сосет хуй")
     
 
 #запуск бота
