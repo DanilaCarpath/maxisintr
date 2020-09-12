@@ -23,6 +23,13 @@ async def аксь(ctx):
 async def аксись(ctx):
 
     await ctx.send ("[Макси] сосет хуй")
+   
+#команда бота
+@bot.command() 
+async def АКСИСЬ(ctx, member: discord.Member):
+
+    await member.edit (nick = "СОСУЩИЙ")
+    await ctx.send ("ник хуесоса" + member.mention + "изменен")
 
 #команда бота
 @bot.command() 
