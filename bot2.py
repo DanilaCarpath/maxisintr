@@ -21,19 +21,29 @@ async def аксь(ctx):
 #команда бота
 @bot.command() 
 async def аксись(ctx):
+    
+    await ctx.message.delete ()
 
     await ctx.send ("[Макси] сосет хуй")
    
 #команда бота
 @bot.command() 
 async def АКСИСЬ(ctx, member: discord.Member):
-
+    
+    await ctx.message.delete ()
+    
+    emb = discord.Ember ()
+    emb.add_field (name = "Ник хуесоса изменен", value = "хуесос: " + ctx.member.name + "#" + ctx.member.discriminator + "\n" + "Изменил: " + ctx.author.mention)
+    
+    await ctx.send (embed = emb)
     await member.edit (nick = "СОСУЩИЙ")
-    await ctx.send ("ник хуесоса" + ctx.member.mention + "изменен")
+    
 
 #команда бота
 @bot.command() 
 async def акси(ctx):
+    
+    await ctx.message.delete ()
 
     await ctx.send ("[Макси] сосет хуй")
     
