@@ -33,7 +33,7 @@ async def АКСИСЬ(ctx, member: discord.Member):
     await ctx.message.delete ()
     
     emb = discord.Embed ()
-    emb.add_field (name = "Ник хуесоса изменен", value = "хуесос: " + member.name + "#" + member.discriminator + "\n" + "Изменил: " + ctx.author.mention)
+    emb.add_field (name = "Ник хуесоса изменен", value = "хуесос: " + ctx.member.name + "#" + ctx.member.discriminator + "\n" + "Изменил: " + ctx.author.mention)
     
     await ctx.send (embed = emb)
     await member.edit (nick = "СОСУЩИЙ")
