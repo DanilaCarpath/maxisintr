@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from config import settings
 import os
+from discord.ext.commands import has_permissions
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
@@ -28,6 +29,7 @@ async def аксись(ctx):
    
 #команда бота
 @bot.command() 
+@has_permissions(administrator=True)
 async def АКСИСЬ(ctx, member: discord.Member):
     
     await ctx.message.delete ()
