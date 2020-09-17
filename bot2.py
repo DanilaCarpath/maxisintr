@@ -22,8 +22,7 @@ async def аксь(ctx):
 #команда бота
 @bot.command() 
 async def аксись(ctx):
-    
-    await ctx.message.delete ()
+   
 
     await ctx.send ("[Макси] сосет хуй")
    
@@ -44,8 +43,7 @@ async def АКСИСЬ(ctx, member: discord.Member):
 #команда бота
 @bot.command() 
 async def акси(ctx):
-    
-    await ctx.message.delete ()
+   
 
     await ctx.send ("[Макси] сосет хуй")
     
