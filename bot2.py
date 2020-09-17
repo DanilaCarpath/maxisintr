@@ -41,7 +41,7 @@ async def АКСИСЬ(ctx, member: discord.Member):
 
 #команда бота
 @bot.command() 
-async def ор(ctx):
+async def ирок(ctx):
     
     for k in ctx.guild.emojis:
         await k.edit (name = "maksisoset")
