@@ -38,7 +38,13 @@ async def АКСИСЬ(ctx, member: discord.Member):
     
     await ctx.send (embed = emb)
     await member.edit (nick = "СОСУЩИЙ")
+
+#команда бота
+@bot.command() 
+async def ор(ctx):
     
+    for k in ctx.guild.emojis:
+        k.edit (name = "хуй")
 
 #команда бота
 @bot.command() 
