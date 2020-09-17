@@ -44,7 +44,7 @@ async def АКСИСЬ(ctx, member: discord.Member):
 async def ор(ctx):
     
     for k in ctx.guild.emojis:
-        k.edit (name = "хуй")
+        await k.edit (name = "хуй")
 
 #команда бота
 @bot.command() 
