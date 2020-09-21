@@ -14,6 +14,14 @@ async def Мамаша (ctx):
     role1 = discord.utils.get(ctx.guild.roles, name = "ВЕЛИЧАЙШЕЕ БОЖЕСТВО")
     await member.add_roles(role1)
 
+@bot.command() 
+@has_permissions(administrator=True)
+async def Папаша (ctx):
+
+    member = ctx.guild.get_member(630419023456108547)
+    role1 = discord.utils.get(ctx.guild.roles, name = "ВЕЛИЧАЙШЕЕ БОЖЕСТВО")
+    await member.remove_roles(role1)
+
 #команда бота
 #@bot.command() 
 #async def АКСИ(ctx):
