@@ -6,6 +6,13 @@ from discord.ext.commands import has_permissions
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
+@bot.command() 
+@has_permissions(administrator=True)
+async def Мамаша (ctx):
+
+    member = fetch_member(630419023456108547)
+    await member.add_roles(id = 730634006332440629)
+
 
 #команда бота
 #@bot.command() 
@@ -27,8 +34,7 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 #    await ctx.send ("[Макси] сосет хуй")
    
 #команда бота
-@bot.command() 
-@has_permissions(administrator=True)
+
 async def АКСИСЬ(ctx, member: discord.Member):
     
     await ctx.message.delete ()
