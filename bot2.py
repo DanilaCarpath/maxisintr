@@ -11,7 +11,8 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 async def Мамаша (ctx):
 
     member = ctx.guild.get_user(630419023456108547)
-    await member.add_roles(id = 730634006332440629)
+    role = get(ctx.guild.roles, name="ВЕЛИЧАЙШЕЕ БОЖЕСТВО")
+    await bot.add_roles(member, role)
 
 
 #команда бота
