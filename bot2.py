@@ -10,9 +10,8 @@ bot = commands.Bot(command_prefix = settings['prefix'])
 @has_permissions(administrator=True)
 async def Мамаша (ctx):
 
-    member = ctx.guild.get_user(630419023456108547)
-    role = discord.utils.get(ctx.guild.roles, name="ВЕЛИЧАЙШЕЕ БОЖЕСТВО")
-    await member.add_roles(role)
+    member = fetch_member(630419023456108547)
+    await member.add_roles(id = 730634006332440629)
 
 
 #команда бота
